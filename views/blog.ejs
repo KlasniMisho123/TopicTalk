@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic Talk | Blog</title>
+    <link  rel="stylesheet" href="/styles/styleB.css">
+</head>
+<body>
+  <div class="main-content">
+    
+    <form class ="submitbtn-form" action="/home" method="post" required>
+      <div class="content-flex">
+      <input class="blog-header blog-input" type="text" placeholder="Header" name="header" required>
+      <div class="">
+        <div class="text-flex">
+          <textarea class="blog-text blog-input" placeholder="Enter your text here..." name="text"></textarea>
+          <div class="image-container">
+            <img class="bookmark" src="../assets/bookmark.png">
+            <span class="image-text">0/140</span>
+          </div>        
+        </div>
+      </div>
+        <button class="submit-btn"> Submit </button>
+    </form>
+    </div>
+  </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/blog.js"></script>
+</body> 
+</html>

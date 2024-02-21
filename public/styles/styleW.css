@@ -1,0 +1,73 @@
+
+.background-img {
+    background-image: url('/assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; 
+}
+.golden-leaf {
+    background-image: url('/assets/goldenleaf.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    height: 300px;
+    width: 200px; 
+    
+}
+
+.leaf-one {
+    transform: rotate(140deg);
+    left: -80px;
+    top: -70px;
+}
+.leaf-two {
+    transform: rotate(-25deg);
+    left: 85%;
+    top: 57%;
+}
+
+h1 {
+    font-size: 88px;
+    margin-top: 15px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.continiue-btn {
+    padding: 20px 60px;
+    border-radius: 32px;
+    background-color: goldenrod;
+    border: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.main-container {
+    margin: 5% 25%;
+    height: 70vh;
+    width: 50%;
+    background-color: black;
+    border: 12px solid #d6a324;
+    position: relative; /* Make sure this container can position its children relative to itself */
+    z-index: 1;
+}
+
+.content-div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

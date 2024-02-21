@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic Talk | Home</title>
+    <link rel="stylesheet" href="/styles/styleH.css">
+</head>
+<body>
+  <div class="main-container">
+    <section class="headers">
+          <div class="profile-section header">
+            <div class="circle-point black">
+              <img src="../assets/profile.png">
+            </div>
+            <div><h5>Profile</h5></div>
+          </div>
+        <form id="blog-form" action="/blog" method="get">
+          <div class="home-section header" onclick="document.getElementById('blog-form').submit()">
+            <div class="circle-point yellow">
+              <img src="../assets/Blog.png">
+            </div>
+            <div><h5>Blog</h5></div>
+          </div>
+        </form>
+    </section>
+    <section>
+        <div class="main-content">
+          <div class="frame" >
+            <div class="blog-div"> 
+              <% if(locals.header && text) { %>
+              <div class="blog-one blog">
+                <div class="blog-flex">
+                  <div class="header-flex">
+                    <div class="blog-profile"> <img src="../assets/blogprofile.png"> </div>
+                    <h2 class="blog-header"> <%=header %> </h2>
+                  </div>
+                   <p> <%=text %> </p>
+                  <button class="edit-btn yellow blog-btn"> <img src="../assets/edit.png"> </button>
+                  <button class="delete-btn pink blog-btn" onclick="$('.blog-one').remove()"> <img src="../assets/trash.png"> </button>
+                </div>  
+              </div>
+              <% } %>
+              <% if(locals.header && text) { %>
+              <div class="blog-two blog">
+                <div class="blog-flex">
+                  <div class="header-flex">
+                    <div class="blog-profile"> <img src="../assets/blogprofile.png"> </div>
+                    <h2 class="blog-header"> <%=header %> </h2>
+                  </div>
+                  <p> <%=text %> </p>
+                  <button class="edit-btn yellow blog-btn" > <img src="../assets/edit.png"> </button>
+                  <button class="delete-btn pink blog-btn" onclick="$('.blog-two').remove()"> <img src="../assets/trash.png"> </button>
+                </div>  
+              </div>
+              <% } %>
+            </div>
+          </div>
+        </div>
+    </section>
+  </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+</body>
+</html>
